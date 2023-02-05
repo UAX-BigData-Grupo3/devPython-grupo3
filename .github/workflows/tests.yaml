@@ -33,5 +33,6 @@ jobs:
           KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
           KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
         run: |
+          python set_variables.py
           python get_dataframes.py
           pytest --nbmake matpotlib.ipynb
