@@ -5,7 +5,7 @@ import os
 # VARIABLES
 PATH = "dataframes/"
 GITHUB_ACTIONS = os.getenv('GITHUB_ACTIONS')
-DIR = os.listdir(PATH)
+
 
 
 # FUNCIONES
@@ -18,6 +18,7 @@ def get_dataframe(dataframe):
     print("Descargado el dataframe en la carpeta dataframes")
 
 def get_dataframe_from_local():
+    DIR = os.listdir(PATH)
     if len(DIR) > 0:
         print("Ya tienes el dataframe en local")
         return
