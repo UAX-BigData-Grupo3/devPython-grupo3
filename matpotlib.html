@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Plot &#8212; My Jupyter Book</title>
+    <title>Basic &#8212; My Jupyter Book</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -224,38 +224,87 @@ title="Print to PDF"
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#">
-   Plot
+   Basic
   </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#plot">
+     Plot
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#scatter">
+     Scatter
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#bar">
+     Bar
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#stem">
+     Stem
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step">
+     Step
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fill-between">
+     Fill Between
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#stackplot">
+     Stackplot
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#scatter">
-   Scatter
+  <a class="reference internal nav-link" href="#statistics-plots">
+   Statistics plots
   </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#bar">
-   Bar
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#stem">
-   Stem
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#step">
-   Step
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#fill-between">
-   Fill Between
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#stackplot">
-   Stackplot
-  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hist">
+     Hist
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#boxplot">
+     Boxplot
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#error-bar">
+     Error bar
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#violin">
+     Violin
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hist-2d">
+     Hist 2D
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hex-bin">
+     Hex bin
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pie">
+     Pie
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -266,7 +315,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Plot</h1>
+                <h1>Basic</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -278,38 +327,87 @@ title="Print to PDF"
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#">
-   Plot
+   Basic
   </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#plot">
+     Plot
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#scatter">
+     Scatter
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#bar">
+     Bar
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#stem">
+     Stem
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step">
+     Step
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fill-between">
+     Fill Between
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#stackplot">
+     Stackplot
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#scatter">
-   Scatter
+  <a class="reference internal nav-link" href="#statistics-plots">
+   Statistics plots
   </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#bar">
-   Bar
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#stem">
-   Stem
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#step">
-   Step
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#fill-between">
-   Fill Between
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#stackplot">
-   Stackplot
-  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hist">
+     Hist
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#boxplot">
+     Boxplot
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#error-bar">
+     Error bar
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#violin">
+     Violin
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hist-2d">
+     Hist 2D
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hex-bin">
+     Hex bin
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pie">
+     Pie
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -347,7 +445,7 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-<p>Cargamos los csv seleccionados de futbol</p>
+<p>Cargamos los csv seleccionados de horas de estudio</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">horas_estudio</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;dataframes/score.csv&#39;</span><span class="p">)</span>
@@ -440,7 +538,7 @@ title="Print to PDF"
 </table>
 </div></div></div>
 </div>
-<p>En matplotlib, hay diferentes funciones para diferentes gráficos. A continuación se muestra una lista de esas funciones.</p>
+<p>En matplotlib, hay diferentes funciones para diferentes gráficos. A continuación se muestra una lista de algunas de esas funciones.</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Tipo de Plot</p></th>
@@ -480,16 +578,25 @@ title="Print to PDF"
 </tr>
 </tbody>
 </table>
-<section id="plot">
-<h1>Plot<a class="headerlink" href="#plot" title="Permalink to this headline">#</a></h1>
-<p>La función básica y por defecto en matplotlib es plt.plot() que traza X frente a Y con lineas o marcadores. La sintaxis es la siguiente:</p>
+<p>Primero definimos las variables del dataset como x e y para facilitat la graficación.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">horas_estudio</span> <span class="o">=</span> <span class="n">horas_estudio</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Scores&#39;</span><span class="p">])</span>
 
 <span class="n">x</span> <span class="o">=</span> <span class="n">horas_estudio</span><span class="p">[</span><span class="s1">&#39;Scores&#39;</span><span class="p">]</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">horas_estudio</span><span class="p">[</span><span class="s1">&#39;Hours&#39;</span><span class="p">]</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Notas&#39;</span><span class="p">,</span> <span class="n">fontdict</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;fontsize&#39;</span><span class="p">:</span><span class="mi">15</span><span class="p">})</span> <span class="c1"># Ponemos una etiqueta a la x</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section class="tex2jax_ignore mathjax_ignore" id="basic">
+<h1>Basic<a class="headerlink" href="#basic" title="Permalink to this headline">#</a></h1>
+<section id="plot">
+<h2>Plot<a class="headerlink" href="#plot" title="Permalink to this headline">#</a></h2>
+<p>La función básica y por defecto en matplotlib es plt.plot() que traza X frente a Y con lineas o marcadores. La sintaxis es la siguiente:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Notas&#39;</span><span class="p">,</span> <span class="n">fontdict</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;fontsize&#39;</span><span class="p">:</span><span class="mi">15</span><span class="p">})</span> <span class="c1"># Ponemos una etiqueta a la x</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Horas&#39;</span><span class="p">,</span> <span class="n">fontdict</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;fontsize&#39;</span><span class="p">:</span><span class="mi">15</span><span class="p">})</span> <span class="c1"># Ponemos una etiqueta a la y</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span> <span class="s1">&#39;solid&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">([</span><span class="s1">&#39;Línea relación horas estudio y notas&#39;</span><span class="p">])</span>
@@ -498,7 +605,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/matpotlib_11_0.png" src="_images/matpotlib_11_0.png" />
+<img alt="_images/matpotlib_14_0.png" src="_images/matpotlib_14_0.png" />
 </div>
 </div>
 <p>Aunque la sintaxis es muy simple, tiene varias interfaces y se puede crear de diferentes maneras.</p>
@@ -509,10 +616,10 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f30d06b4b20&gt;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f7a449b0f10&gt;]
 </pre></div>
 </div>
-<img alt="_images/matpotlib_13_1.png" src="_images/matpotlib_13_1.png" />
+<img alt="_images/matpotlib_16_1.png" src="_images/matpotlib_16_1.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -522,10 +629,10 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f30d0541420&gt;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f7a44841150&gt;]
 </pre></div>
 </div>
-<img alt="_images/matpotlib_14_1.png" src="_images/matpotlib_14_1.png" />
+<img alt="_images/matpotlib_17_1.png" src="_images/matpotlib_17_1.png" />
 </div>
 </div>
 <p>Con la funcion subplot podemos dibujar varias gráficas sobre la misma ventana estableciendo varios parámetros:</p>
@@ -562,12 +669,12 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/matpotlib_16_0.png" src="_images/matpotlib_16_0.png" />
+<img alt="_images/matpotlib_19_0.png" src="_images/matpotlib_19_0.png" />
 </div>
 </div>
 </section>
 <section id="scatter">
-<h1>Scatter<a class="headerlink" href="#scatter" title="Permalink to this headline">#</a></h1>
+<h2>Scatter<a class="headerlink" href="#scatter" title="Permalink to this headline">#</a></h2>
 <p>Con scatter se puede dibujar el gráfico de dispersión de X frente a Y con distintos colores y grosores</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -581,12 +688,12 @@ title="Print to PDF"
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0, 0.5, &#39;Horas&#39;)
 </pre></div>
 </div>
-<img alt="_images/matpotlib_19_1.png" src="_images/matpotlib_19_1.png" />
+<img alt="_images/matpotlib_22_1.png" src="_images/matpotlib_22_1.png" />
 </div>
 </div>
 </section>
 <section id="bar">
-<h1>Bar<a class="headerlink" href="#bar" title="Permalink to this headline">#</a></h1>
+<h2>Bar<a class="headerlink" href="#bar" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
@@ -599,34 +706,15 @@ title="Print to PDF"
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0, 0.5, &#39;Horas&#39;)
 </pre></div>
 </div>
-<img alt="_images/matpotlib_21_1.png" src="_images/matpotlib_21_1.png" />
+<img alt="_images/matpotlib_24_1.png" src="_images/matpotlib_24_1.png" />
 </div>
 </div>
 </section>
 <section id="stem">
-<h1>Stem<a class="headerlink" href="#stem" title="Permalink to this headline">#</a></h1>
+<h2>Stem<a class="headerlink" href="#stem" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">stem</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Notas&#39;</span><span class="p">,</span> <span class="n">fontdict</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;fontsize&#39;</span><span class="p">:</span><span class="mi">15</span><span class="p">})</span> <span class="c1"># Ponemos una etiqueta a la x</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Horas&#39;</span><span class="p">,</span> <span class="n">fontdict</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;fontsize&#39;</span><span class="p">:</span><span class="mi">15</span><span class="p">})</span> <span class="c1"># Ponemos una etiqueta a la y</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0, 0.5, &#39;Horas&#39;)
-</pre></div>
-</div>
-<img alt="_images/matpotlib_23_1.png" src="_images/matpotlib_23_1.png" />
-</div>
-</div>
-</section>
-<section id="step">
-<h1>Step<a class="headerlink" href="#step" title="Permalink to this headline">#</a></h1>
-<p>Grafico de escalera.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">step</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Notas&#39;</span><span class="p">,</span> <span class="n">fontdict</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;fontsize&#39;</span><span class="p">:</span><span class="mi">15</span><span class="p">})</span> <span class="c1"># Ponemos una etiqueta a la x</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Horas&#39;</span><span class="p">,</span> <span class="n">fontdict</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;fontsize&#39;</span><span class="p">:</span><span class="mi">15</span><span class="p">})</span> <span class="c1"># Ponemos una etiqueta a la y</span>
 </pre></div>
@@ -640,8 +728,27 @@ title="Print to PDF"
 </div>
 </div>
 </section>
+<section id="step">
+<h2>Step<a class="headerlink" href="#step" title="Permalink to this headline">#</a></h2>
+<p>Grafico de escalera.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">step</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Notas&#39;</span><span class="p">,</span> <span class="n">fontdict</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;fontsize&#39;</span><span class="p">:</span><span class="mi">15</span><span class="p">})</span> <span class="c1"># Ponemos una etiqueta a la x</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Horas&#39;</span><span class="p">,</span> <span class="n">fontdict</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;fontsize&#39;</span><span class="p">:</span><span class="mi">15</span><span class="p">})</span> <span class="c1"># Ponemos una etiqueta a la y</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0, 0.5, &#39;Horas&#39;)
+</pre></div>
+</div>
+<img alt="_images/matpotlib_29_1.png" src="_images/matpotlib_29_1.png" />
+</div>
+</div>
+</section>
 <section id="fill-between">
-<h1>Fill Between<a class="headerlink" href="#fill-between" title="Permalink to this headline">#</a></h1>
+<h2>Fill Between<a class="headerlink" href="#fill-between" title="Permalink to this headline">#</a></h2>
 <p>Con el se puede rellenar el area comprendida entre dos funciones.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -663,12 +770,12 @@ title="Print to PDF"
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0, 0.5, &#39;Horas&#39;)
 </pre></div>
 </div>
-<img alt="_images/matpotlib_29_1.png" src="_images/matpotlib_29_1.png" />
+<img alt="_images/matpotlib_32_1.png" src="_images/matpotlib_32_1.png" />
 </div>
 </div>
 </section>
 <section id="stackplot">
-<h1>Stackplot<a class="headerlink" href="#stackplot" title="Permalink to this headline">#</a></h1>
+<h2>Stackplot<a class="headerlink" href="#stackplot" title="Permalink to this headline">#</a></h2>
 <p>Dibuja el area apilada bajo la función</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -682,9 +789,174 @@ title="Print to PDF"
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0, 0.5, &#39;Horas&#39;)
 </pre></div>
 </div>
-<img alt="_images/matpotlib_32_1.png" src="_images/matpotlib_32_1.png" />
+<img alt="_images/matpotlib_35_1.png" src="_images/matpotlib_35_1.png" />
 </div>
 </div>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="statistics-plots">
+<h1>Statistics plots<a class="headerlink" href="#statistics-plots" title="Permalink to this headline">#</a></h1>
+<p>Plots para análisis estadístico</p>
+<section id="hist">
+<h2>Hist<a class="headerlink" href="#hist" title="Permalink to this headline">#</a></h2>
+<p>Dibuja un histograma, función similar a Bar Plot. Agrupa los datos en x y cuenta la cantidad de valores en cada contenedor.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">bins</span> <span class="o">=</span> <span class="mi">20</span><span class="p">,</span><span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span><span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;skyblue&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Horas&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/matpotlib_40_0.png" src="_images/matpotlib_40_0.png" />
+</div>
+</div>
+<p>En el histograma anterior, además de la variable que se va a contar, en este caso horas, se indican 20 contenedores (barras) y que la línea externa de las barras sea de color negro y el color interno azul cielo. También se añade el título del plot como Horas.</p>
+</section>
+<section id="boxplot">
+<h2>Boxplot<a class="headerlink" href="#boxplot" title="Permalink to this headline">#</a></h2>
+<p>Dibuja un diagrama de caja. El cuadro se extiende desde el primer cuartil (Q1) hasta el tercer cuartil (Q3) de los datos, con una línea en la mediana. Los bigotes se extienden desde la caja en 1,5 veces el rango intercuartil (IQR). Los puntos voladores son aquellos que pasan del final de los bigotes.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">horas_estudio</span><span class="p">,</span>
+            <span class="n">vert</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>  <span class="c1"># vertical box alignment</span>
+            <span class="n">patch_artist</span><span class="o">=</span><span class="kc">True</span> <span class="c1"># fill with color</span>
+           <span class="p">)</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/matpotlib_44_0.png" src="_images/matpotlib_44_0.png" />
+</div>
+</div>
+<p>Se añade la alineación vertical y se rellena con color.</p>
+</section>
+<section id="error-bar">
+<h2>Error bar<a class="headerlink" href="#error-bar" title="Permalink to this headline">#</a></h2>
+<p>Dibuja x e y con las barras de error. , y definen las ubicaciones de los datos, xerr, yerr definen los tamaños de la barra de error. Por defecto, esto dibuja los marcadores/líneas de datos así como las barras de error.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">errorbar</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">xerr</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">yerr</span><span class="o">=</span><span class="mf">0.4</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Las barras de error más simples, 0,2 en x, 0,4 en y&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Notas&#39;</span><span class="p">)</span> <span class="c1"># Ponemos una etiqueta a la x</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Horas&#39;</span><span class="p">)</span> <span class="c1"># Ponemos una etiqueta a la y</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/matpotlib_48_0.png" src="_images/matpotlib_48_0.png" />
+</div>
+</div>
+<p>Si además usamos fmt=’none’ se dibujan barras de error sin ningún marcador de datos. También se añade un color distinto del color por defecto.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">errorbar</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">xerr</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">yerr</span><span class="o">=</span><span class="mf">0.4</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s1">&#39;none&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Las barras de error más simples, 0,2 en x, 0,4 en y&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Notas&#39;</span><span class="p">)</span> <span class="c1"># Ponemos una etiqueta a la x</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Horas&#39;</span><span class="p">)</span> <span class="c1"># Ponemos una etiqueta a la y</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/matpotlib_50_0.png" src="_images/matpotlib_50_0.png" />
+</div>
+</div>
+</section>
+<section id="violin">
+<h2>Violin<a class="headerlink" href="#violin" title="Permalink to this headline">#</a></h2>
+<p>Dibuja un diagrama de violín. Cada área rellena se extiende para representar todo el rango de datos, con líneas opcionales en la media, la mediana, el mínimo, el máximo y los cuantiles especificados.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">violinplot</span><span class="p">(</span><span class="n">horas_estudio</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/matpotlib_53_0.png" src="_images/matpotlib_53_0.png" />
+</div>
+</div>
+<p>En esta segunda opción se eliminan las muestras de media, mediana y valor extremo.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">violinplot</span><span class="p">(</span><span class="n">horas_estudio</span><span class="p">,</span><span class="n">showmeans</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">showmedians</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">showextrema</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/matpotlib_55_0.png" src="_images/matpotlib_55_0.png" />
+</div>
+</div>
+</section>
+<section id="hist-2d">
+<h2>Hist 2D<a class="headerlink" href="#hist-2d" title="Permalink to this headline">#</a></h2>
+<p>Dibuja un histograma en 2D.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">hist2d</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span> <span class="n">bins</span> <span class="o">=</span> <span class="mi">20</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Horas&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/matpotlib_58_0.png" src="_images/matpotlib_58_0.png" />
+</div>
+</div>
+</section>
+<section id="hex-bin">
+<h2>Hex bin<a class="headerlink" href="#hex-bin" title="Permalink to this headline">#</a></h2>
+<p>Dibuja un bigging hexagonal en 2D. El valor del hexágono está determinado por el número de puntos en el hexágono si no se especifica nada.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">hexbin</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Horas&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/matpotlib_61_0.png" src="_images/matpotlib_61_0.png" />
+</div>
+</div>
+</section>
+<section id="pie">
+<h2>Pie<a class="headerlink" href="#pie" title="Permalink to this headline">#</a></h2>
+<p>Dibuja un gráfico circular. El área fraccionaria de cada cuña viene dada por x/sum(x).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="s2">&quot;hotpink&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;#4CAF50&quot;</span><span class="p">]</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">pie</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">colors</span><span class="o">=</span><span class="n">colors</span><span class="p">,</span> <span class="n">radius</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">center</span><span class="o">=</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span>
+       <span class="n">wedgeprops</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;linewidth&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;edgecolor&quot;</span><span class="p">:</span> <span class="s2">&quot;white&quot;</span><span class="p">},</span> <span class="n">frame</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/matpotlib_64_0.png" src="_images/matpotlib_64_0.png" />
+</div>
+</div>
+<p>Se hace un gráfico con datos diferentes para mostrar otras opciones de gráfico circular. Además de los labels como se ponen, se puede añadir como leyenda y separar alguna de las segmentaciones del gráfico. También se pueden añadir los valores al gráfico.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">z</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">35</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">15</span><span class="p">])</span>
+<span class="n">mylabels</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Apples&quot;</span><span class="p">,</span> <span class="s2">&quot;Bananas&quot;</span><span class="p">,</span> <span class="s2">&quot;Cherries&quot;</span><span class="p">,</span> <span class="s2">&quot;Dates&quot;</span><span class="p">]</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">pie</span><span class="p">(</span><span class="n">z</span><span class="p">,</span> <span class="n">labels</span> <span class="o">=</span> <span class="n">mylabels</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span> 
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/matpotlib_66_0.png" src="_images/matpotlib_66_0.png" />
+</div>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
